@@ -11,9 +11,12 @@
 		DE016745262674D3004D070D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE016744262674D3004D070D /* ContentView.swift */; };
 		DE016747262674D3004D070D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE016746262674D3004D070D /* Assets.xcassets */; };
 		DE01674A262674D3004D070D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE016749262674D3004D070D /* Preview Assets.xcassets */; };
-		DE01674D262674D3004D070D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE01674B262674D3004D070D /* Main.storyboard */; };
 		DE016759262674D4004D070D /* OrwellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE016758262674D4004D070D /* OrwellTests.swift */; };
 		DE016764262674D4004D070D /* OrwellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE016763262674D4004D070D /* OrwellUITests.swift */; };
+		DEADD77726270E7B0017DBDE /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD77626270E7B0017DBDE /* PlayerView.swift */; };
+		DEADD77F26270EB90017DBDE /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD77E26270EB90017DBDE /* PlayerContainerView.swift */; };
+		DEADD78A26270F7B0017DBDE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD78926270F7B0017DBDE /* ContentViewModel.swift */; };
+		DEADD78F262713710017DBDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEADD78E262713710017DBDE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		DE016744262674D3004D070D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE016746262674D3004D070D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE016749262674D3004D070D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DE01674C262674D3004D070D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE01674E262674D4004D070D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE01674F262674D4004D070D /* Orwell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orwell.entitlements; sourceTree = "<group>"; };
 		DE016754262674D4004D070D /* OrwellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrwellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +50,10 @@
 		DE01675F262674D4004D070D /* OrwellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrwellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE016763262674D4004D070D /* OrwellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrwellUITests.swift; sourceTree = "<group>"; };
 		DE016765262674D4004D070D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEADD77626270E7B0017DBDE /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		DEADD77E26270EB90017DBDE /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
+		DEADD78926270F7B0017DBDE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		DEADD78E262713710017DBDE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +104,10 @@
 		DE016741262674D3004D070D /* Orwell */ = {
 			isa = PBXGroup;
 			children = (
+				DEADD77526270E4E0017DBDE /* Resources */,
+				DEADD77426270E4A0017DBDE /* Source */,
 				DE016742262674D3004D070D /* AppDelegate.swift */,
 				DE016744262674D3004D070D /* ContentView.swift */,
-				DE016746262674D3004D070D /* Assets.xcassets */,
-				DE01674B262674D3004D070D /* Main.storyboard */,
-				DE01674E262674D4004D070D /* Info.plist */,
-				DE01674F262674D4004D070D /* Orwell.entitlements */,
 				DE016748262674D3004D070D /* Preview Content */,
 			);
 			path = Orwell;
@@ -133,6 +137,43 @@
 				DE016765262674D4004D070D /* Info.plist */,
 			);
 			path = OrwellUITests;
+			sourceTree = "<group>";
+		};
+		DEADD77226270E3B0017DBDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEADD77626270E7B0017DBDE /* PlayerView.swift */,
+				DEADD77E26270EB90017DBDE /* PlayerContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEADD77326270E3F0017DBDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEADD78926270F7B0017DBDE /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEADD77426270E4A0017DBDE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DEADD77226270E3B0017DBDE /* View */,
+				DEADD77326270E3F0017DBDE /* ViewModel */,
+				DEADD78E262713710017DBDE /* Main.storyboard */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DEADD77526270E4E0017DBDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE016746262674D3004D070D /* Assets.xcassets */,
+				DE01674E262674D4004D070D /* Info.plist */,
+				DE01674F262674D4004D070D /* Orwell.entitlements */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE01674D262674D3004D070D /* Main.storyboard in Resources */,
+				DEADD78F262713710017DBDE /* Main.storyboard in Resources */,
 				DE01674A262674D3004D070D /* Preview Assets.xcassets in Resources */,
 				DE016747262674D3004D070D /* Assets.xcassets in Resources */,
 			);
@@ -265,8 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEADD77726270E7B0017DBDE /* PlayerView.swift in Sources */,
 				DE016745262674D3004D070D /* ContentView.swift in Sources */,
 				DE016743262674D3004D070D /* AppDelegate.swift in Sources */,
+				DEADD77F26270EB90017DBDE /* PlayerContainerView.swift in Sources */,
+				DEADD78A26270F7B0017DBDE /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,17 +344,6 @@
 			targetProxy = DE016760262674D4004D070D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DE01674B262674D3004D070D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE01674C262674D3004D070D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DE016766262674D4004D070D /* Debug */ = {
@@ -433,19 +466,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Orwell/Orwell.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Orwell/Resources/Orwell.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Orwell/Preview Content\"";
 				DEVELOPMENT_TEAM = HNT2NME926;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Orwell/Info.plist;
+				INFOPLIST_FILE = Orwell/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarlosHenriqueMartins.Orwell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -457,19 +490,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Orwell/Orwell.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Orwell/Resources/Orwell.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Orwell/Preview Content\"";
 				DEVELOPMENT_TEAM = HNT2NME926;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Orwell/Info.plist;
+				INFOPLIST_FILE = Orwell/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarlosHenriqueMartins.Orwell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

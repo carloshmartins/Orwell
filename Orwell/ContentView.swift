@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+    @ObservedObject var viewModel = ContentViewModel()
+    init() {
+        viewModel.checkAuthorization()
     }
-}
 
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    var body: some View {
+        PlayerContainerView(captureSession: viewModel.captureSession)
+           .clipShape(Circle())
     }
 }
