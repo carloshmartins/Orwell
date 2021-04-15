@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Orwell
 //
-//  Created by carlos.henrique.martrins on 13/04/21.
+//  Created by carlos.henrique.martrins on 14/04/21.
 //
 
 import Cocoa
@@ -12,12 +12,12 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
-    var statusbar: NSStatusBar!
-
+    var statusBarItem: NSStatusItem!
+    let settings = UserSettings()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = ContentView().environmentObject(settings)
 
         window = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
@@ -33,12 +33,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.isMovable = true
         window.isMovableByWindowBackground = true
         
-//        statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
-//        statusBarItem.menu = makeMenu()
-//                
-//        if let button = self.statusBarItem.button {
-//            button.title = "Watch Me, Orwell"
-//        }
+        statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
+        statusBarItem.menu = makeMenu()
+                
+        if let button = self.statusBarItem.button {
+            button.title = "Orwell"
+//            button.action = #selector(makeRectangleCamera(:))
+        }
+    }
+    
+    @objc func makeRectangleCamera() {
+        settings.shape = .rectangle
+    }
+    
+    @objc func makeCircleCamera() {
+        settings.shape = .circle
+    }
+    
+    @objc func mirrorCamera() {
+        settings.isMirroring.toggle()
+    }
+    
+    private func makeMenu() -> NSMenu {
+        var menu = NSMenu()
+        
+        return menu
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

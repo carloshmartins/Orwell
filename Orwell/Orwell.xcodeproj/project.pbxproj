@@ -7,71 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE016743262674D3004D070D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE016742262674D3004D070D /* AppDelegate.swift */; };
-		DE016745262674D3004D070D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE016744262674D3004D070D /* ContentView.swift */; };
-		DE016747262674D3004D070D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE016746262674D3004D070D /* Assets.xcassets */; };
-		DE01674A262674D3004D070D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE016749262674D3004D070D /* Preview Assets.xcassets */; };
-		DE016759262674D4004D070D /* OrwellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE016758262674D4004D070D /* OrwellTests.swift */; };
-		DE016764262674D4004D070D /* OrwellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE016763262674D4004D070D /* OrwellUITests.swift */; };
-		DEADD77726270E7B0017DBDE /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD77626270E7B0017DBDE /* PlayerView.swift */; };
-		DEADD77F26270EB90017DBDE /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD77E26270EB90017DBDE /* PlayerContainerView.swift */; };
-		DEADD78A26270F7B0017DBDE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEADD78926270F7B0017DBDE /* ContentViewModel.swift */; };
-		DEADD78F262713710017DBDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEADD78E262713710017DBDE /* Main.storyboard */; };
+		DEE4339E2627CB19001CF87B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4339D2627CB19001CF87B /* AppDelegate.swift */; };
+		DEE433A02627CB19001CF87B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE4339F2627CB19001CF87B /* ContentView.swift */; };
+		DEE433A22627CB19001CF87B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE433A12627CB19001CF87B /* Assets.xcassets */; };
+		DEE433A52627CB19001CF87B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE433A42627CB19001CF87B /* Preview Assets.xcassets */; };
+		DEE433A82627CB19001CF87B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE433A62627CB19001CF87B /* Main.storyboard */; };
+		DEE433B42627CB19001CF87B /* OrwellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433B32627CB19001CF87B /* OrwellTests.swift */; };
+		DEE433BF2627CB19001CF87B /* OrwellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433BE2627CB19001CF87B /* OrwellUITests.swift */; };
+		DEE433DA2627CB9F001CF87B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433D92627CB9F001CF87B /* PlayerView.swift */; };
+		DEE433DF2627CBD3001CF87B /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433DE2627CBD3001CF87B /* PlayerContainerView.swift */; };
+		DEE433E42627CBF5001CF87B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433E32627CBF5001CF87B /* ContentViewModel.swift */; };
+		DEE433EA2627CCE6001CF87B /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433E92627CCE6001CF87B /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DE016755262674D4004D070D /* PBXContainerItemProxy */ = {
+		DEE433B02627CB19001CF87B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE016737262674D3004D070D /* Project object */;
+			containerPortal = DEE433922627CB19001CF87B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE01673E262674D3004D070D;
+			remoteGlobalIDString = DEE433992627CB19001CF87B;
 			remoteInfo = Orwell;
 		};
-		DE016760262674D4004D070D /* PBXContainerItemProxy */ = {
+		DEE433BB2627CB19001CF87B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE016737262674D3004D070D /* Project object */;
+			containerPortal = DEE433922627CB19001CF87B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE01673E262674D3004D070D;
+			remoteGlobalIDString = DEE433992627CB19001CF87B;
 			remoteInfo = Orwell;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE01673F262674D3004D070D /* Orwell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orwell.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE016742262674D3004D070D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE016744262674D3004D070D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DE016746262674D3004D070D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE016749262674D3004D070D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DE01674E262674D4004D070D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE01674F262674D4004D070D /* Orwell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orwell.entitlements; sourceTree = "<group>"; };
-		DE016754262674D4004D070D /* OrwellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrwellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE016758262674D4004D070D /* OrwellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrwellTests.swift; sourceTree = "<group>"; };
-		DE01675A262674D4004D070D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE01675F262674D4004D070D /* OrwellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrwellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE016763262674D4004D070D /* OrwellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrwellUITests.swift; sourceTree = "<group>"; };
-		DE016765262674D4004D070D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEADD77626270E7B0017DBDE /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		DEADD77E26270EB90017DBDE /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
-		DEADD78926270F7B0017DBDE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		DEADD78E262713710017DBDE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DEE4339A2627CB19001CF87B /* Orwell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orwell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE4339D2627CB19001CF87B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEE4339F2627CB19001CF87B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEE433A12627CB19001CF87B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEE433A42627CB19001CF87B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEE433A72627CB19001CF87B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEE433A92627CB19001CF87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE433AA2627CB19001CF87B /* Orwell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orwell.entitlements; sourceTree = "<group>"; };
+		DEE433AF2627CB19001CF87B /* OrwellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrwellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE433B32627CB19001CF87B /* OrwellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrwellTests.swift; sourceTree = "<group>"; };
+		DEE433B52627CB19001CF87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE433BA2627CB19001CF87B /* OrwellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrwellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE433BE2627CB19001CF87B /* OrwellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrwellUITests.swift; sourceTree = "<group>"; };
+		DEE433C02627CB19001CF87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE433D92627CB9F001CF87B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		DEE433DE2627CBD3001CF87B /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
+		DEE433E32627CBF5001CF87B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		DEE433E92627CCE6001CF87B /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DE01673C262674D3004D070D /* Frameworks */ = {
+		DEE433972627CB19001CF87B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE016751262674D4004D070D /* Frameworks */ = {
+		DEE433AC2627CB19001CF87B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE01675C262674D4004D070D /* Frameworks */ = {
+		DEE433B72627CB19001CF87B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,111 +83,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE016736262674D3004D070D = {
+		DEE433912627CB19001CF87B = {
 			isa = PBXGroup;
 			children = (
-				DE016741262674D3004D070D /* Orwell */,
-				DE016757262674D4004D070D /* OrwellTests */,
-				DE016762262674D4004D070D /* OrwellUITests */,
-				DE016740262674D3004D070D /* Products */,
+				DEE4339C2627CB19001CF87B /* Orwell */,
+				DEE433B22627CB19001CF87B /* OrwellTests */,
+				DEE433BD2627CB19001CF87B /* OrwellUITests */,
+				DEE4339B2627CB19001CF87B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DE016740262674D3004D070D /* Products */ = {
+		DEE4339B2627CB19001CF87B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE01673F262674D3004D070D /* Orwell.app */,
-				DE016754262674D4004D070D /* OrwellTests.xctest */,
-				DE01675F262674D4004D070D /* OrwellUITests.xctest */,
+				DEE4339A2627CB19001CF87B /* Orwell.app */,
+				DEE433AF2627CB19001CF87B /* OrwellTests.xctest */,
+				DEE433BA2627CB19001CF87B /* OrwellUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE016741262674D3004D070D /* Orwell */ = {
+		DEE4339C2627CB19001CF87B /* Orwell */ = {
 			isa = PBXGroup;
 			children = (
-				DEADD77526270E4E0017DBDE /* Resources */,
-				DEADD77426270E4A0017DBDE /* Source */,
-				DE016742262674D3004D070D /* AppDelegate.swift */,
-				DE016744262674D3004D070D /* ContentView.swift */,
-				DE016748262674D3004D070D /* Preview Content */,
+				DEE433D02627CB2B001CF87B /* Sources */,
+				DEE433CF2627CB24001CF87B /* Resources */,
+				DEE433AA2627CB19001CF87B /* Orwell.entitlements */,
+				DEE433A32627CB19001CF87B /* Preview Content */,
 			);
 			path = Orwell;
 			sourceTree = "<group>";
 		};
-		DE016748262674D3004D070D /* Preview Content */ = {
+		DEE433A32627CB19001CF87B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DE016749262674D3004D070D /* Preview Assets.xcassets */,
+				DEE433A42627CB19001CF87B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DE016757262674D4004D070D /* OrwellTests */ = {
+		DEE433B22627CB19001CF87B /* OrwellTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE016758262674D4004D070D /* OrwellTests.swift */,
-				DE01675A262674D4004D070D /* Info.plist */,
+				DEE433B32627CB19001CF87B /* OrwellTests.swift */,
+				DEE433B52627CB19001CF87B /* Info.plist */,
 			);
 			path = OrwellTests;
 			sourceTree = "<group>";
 		};
-		DE016762262674D4004D070D /* OrwellUITests */ = {
+		DEE433BD2627CB19001CF87B /* OrwellUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DE016763262674D4004D070D /* OrwellUITests.swift */,
-				DE016765262674D4004D070D /* Info.plist */,
+				DEE433BE2627CB19001CF87B /* OrwellUITests.swift */,
+				DEE433C02627CB19001CF87B /* Info.plist */,
 			);
 			path = OrwellUITests;
 			sourceTree = "<group>";
 		};
-		DEADD77226270E3B0017DBDE /* View */ = {
+		DEE433CF2627CB24001CF87B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DEADD77626270E7B0017DBDE /* PlayerView.swift */,
-				DEADD77E26270EB90017DBDE /* PlayerContainerView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DEADD77326270E3F0017DBDE /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				DEADD78926270F7B0017DBDE /* ContentViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		DEADD77426270E4A0017DBDE /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				DEADD77226270E3B0017DBDE /* View */,
-				DEADD77326270E3F0017DBDE /* ViewModel */,
-				DEADD78E262713710017DBDE /* Main.storyboard */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		DEADD77526270E4E0017DBDE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DE016746262674D3004D070D /* Assets.xcassets */,
-				DE01674E262674D4004D070D /* Info.plist */,
-				DE01674F262674D4004D070D /* Orwell.entitlements */,
+				DEE433A92627CB19001CF87B /* Info.plist */,
+				DEE433A12627CB19001CF87B /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DEE433D02627CB2B001CF87B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DEE433E82627CCD7001CF87B /* Settings */,
+				DEE433D82627CB87001CF87B /* ViewModels */,
+				DEE433D72627CB81001CF87B /* Views */,
+				DEE4339F2627CB19001CF87B /* ContentView.swift */,
+				DEE4339D2627CB19001CF87B /* AppDelegate.swift */,
+				DEE433A62627CB19001CF87B /* Main.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DEE433D72627CB81001CF87B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEE433D92627CB9F001CF87B /* PlayerView.swift */,
+				DEE433DE2627CBD3001CF87B /* PlayerContainerView.swift */,
+				DEE433E32627CBF5001CF87B /* ContentViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEE433D82627CB87001CF87B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DEE433E82627CCD7001CF87B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DEE433E92627CCE6001CF87B /* UserSettings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE01673E262674D3004D070D /* Orwell */ = {
+		DEE433992627CB19001CF87B /* Orwell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE016768262674D4004D070D /* Build configuration list for PBXNativeTarget "Orwell" */;
+			buildConfigurationList = DEE433C32627CB19001CF87B /* Build configuration list for PBXNativeTarget "Orwell" */;
 			buildPhases = (
-				DE01673B262674D3004D070D /* Sources */,
-				DE01673C262674D3004D070D /* Frameworks */,
-				DE01673D262674D3004D070D /* Resources */,
+				DEE433962627CB19001CF87B /* Sources */,
+				DEE433972627CB19001CF87B /* Frameworks */,
+				DEE433982627CB19001CF87B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -193,68 +204,68 @@
 			);
 			name = Orwell;
 			productName = Orwell;
-			productReference = DE01673F262674D3004D070D /* Orwell.app */;
+			productReference = DEE4339A2627CB19001CF87B /* Orwell.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DE016753262674D4004D070D /* OrwellTests */ = {
+		DEE433AE2627CB19001CF87B /* OrwellTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE01676B262674D4004D070D /* Build configuration list for PBXNativeTarget "OrwellTests" */;
+			buildConfigurationList = DEE433C62627CB19001CF87B /* Build configuration list for PBXNativeTarget "OrwellTests" */;
 			buildPhases = (
-				DE016750262674D4004D070D /* Sources */,
-				DE016751262674D4004D070D /* Frameworks */,
-				DE016752262674D4004D070D /* Resources */,
+				DEE433AB2627CB19001CF87B /* Sources */,
+				DEE433AC2627CB19001CF87B /* Frameworks */,
+				DEE433AD2627CB19001CF87B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE016756262674D4004D070D /* PBXTargetDependency */,
+				DEE433B12627CB19001CF87B /* PBXTargetDependency */,
 			);
 			name = OrwellTests;
 			productName = OrwellTests;
-			productReference = DE016754262674D4004D070D /* OrwellTests.xctest */;
+			productReference = DEE433AF2627CB19001CF87B /* OrwellTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DE01675E262674D4004D070D /* OrwellUITests */ = {
+		DEE433B92627CB19001CF87B /* OrwellUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE01676E262674D4004D070D /* Build configuration list for PBXNativeTarget "OrwellUITests" */;
+			buildConfigurationList = DEE433C92627CB19001CF87B /* Build configuration list for PBXNativeTarget "OrwellUITests" */;
 			buildPhases = (
-				DE01675B262674D4004D070D /* Sources */,
-				DE01675C262674D4004D070D /* Frameworks */,
-				DE01675D262674D4004D070D /* Resources */,
+				DEE433B62627CB19001CF87B /* Sources */,
+				DEE433B72627CB19001CF87B /* Frameworks */,
+				DEE433B82627CB19001CF87B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE016761262674D4004D070D /* PBXTargetDependency */,
+				DEE433BC2627CB19001CF87B /* PBXTargetDependency */,
 			);
 			name = OrwellUITests;
 			productName = OrwellUITests;
-			productReference = DE01675F262674D4004D070D /* OrwellUITests.xctest */;
+			productReference = DEE433BA2627CB19001CF87B /* OrwellUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DE016737262674D3004D070D /* Project object */ = {
+		DEE433922627CB19001CF87B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					DE01673E262674D3004D070D = {
+					DEE433992627CB19001CF87B = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					DE016753262674D4004D070D = {
+					DEE433AE2627CB19001CF87B = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = DE01673E262674D3004D070D;
+						TestTargetID = DEE433992627CB19001CF87B;
 					};
-					DE01675E262674D4004D070D = {
+					DEE433B92627CB19001CF87B = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = DE01673E262674D3004D070D;
+						TestTargetID = DEE433992627CB19001CF87B;
 					};
 				};
 			};
-			buildConfigurationList = DE01673A262674D3004D070D /* Build configuration list for PBXProject "Orwell" */;
+			buildConfigurationList = DEE433952627CB19001CF87B /* Build configuration list for PBXProject "Orwell" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,37 +273,37 @@
 				en,
 				Base,
 			);
-			mainGroup = DE016736262674D3004D070D;
-			productRefGroup = DE016740262674D3004D070D /* Products */;
+			mainGroup = DEE433912627CB19001CF87B;
+			productRefGroup = DEE4339B2627CB19001CF87B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE01673E262674D3004D070D /* Orwell */,
-				DE016753262674D4004D070D /* OrwellTests */,
-				DE01675E262674D4004D070D /* OrwellUITests */,
+				DEE433992627CB19001CF87B /* Orwell */,
+				DEE433AE2627CB19001CF87B /* OrwellTests */,
+				DEE433B92627CB19001CF87B /* OrwellUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE01673D262674D3004D070D /* Resources */ = {
+		DEE433982627CB19001CF87B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEADD78F262713710017DBDE /* Main.storyboard in Resources */,
-				DE01674A262674D3004D070D /* Preview Assets.xcassets in Resources */,
-				DE016747262674D3004D070D /* Assets.xcassets in Resources */,
+				DEE433A82627CB19001CF87B /* Main.storyboard in Resources */,
+				DEE433A52627CB19001CF87B /* Preview Assets.xcassets in Resources */,
+				DEE433A22627CB19001CF87B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE016752262674D4004D070D /* Resources */ = {
+		DEE433AD2627CB19001CF87B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE01675D262674D4004D070D /* Resources */ = {
+		DEE433B82627CB19001CF87B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,51 +313,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE01673B262674D3004D070D /* Sources */ = {
+		DEE433962627CB19001CF87B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEADD77726270E7B0017DBDE /* PlayerView.swift in Sources */,
-				DE016745262674D3004D070D /* ContentView.swift in Sources */,
-				DE016743262674D3004D070D /* AppDelegate.swift in Sources */,
-				DEADD77F26270EB90017DBDE /* PlayerContainerView.swift in Sources */,
-				DEADD78A26270F7B0017DBDE /* ContentViewModel.swift in Sources */,
+				DEE433DA2627CB9F001CF87B /* PlayerView.swift in Sources */,
+				DEE433EA2627CCE6001CF87B /* UserSettings.swift in Sources */,
+				DEE433A02627CB19001CF87B /* ContentView.swift in Sources */,
+				DEE4339E2627CB19001CF87B /* AppDelegate.swift in Sources */,
+				DEE433DF2627CBD3001CF87B /* PlayerContainerView.swift in Sources */,
+				DEE433E42627CBF5001CF87B /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE016750262674D4004D070D /* Sources */ = {
+		DEE433AB2627CB19001CF87B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE016759262674D4004D070D /* OrwellTests.swift in Sources */,
+				DEE433B42627CB19001CF87B /* OrwellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE01675B262674D4004D070D /* Sources */ = {
+		DEE433B62627CB19001CF87B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE016764262674D4004D070D /* OrwellUITests.swift in Sources */,
+				DEE433BF2627CB19001CF87B /* OrwellUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE016756262674D4004D070D /* PBXTargetDependency */ = {
+		DEE433B12627CB19001CF87B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE01673E262674D3004D070D /* Orwell */;
-			targetProxy = DE016755262674D4004D070D /* PBXContainerItemProxy */;
+			target = DEE433992627CB19001CF87B /* Orwell */;
+			targetProxy = DEE433B02627CB19001CF87B /* PBXContainerItemProxy */;
 		};
-		DE016761262674D4004D070D /* PBXTargetDependency */ = {
+		DEE433BC2627CB19001CF87B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE01673E262674D3004D070D /* Orwell */;
-			targetProxy = DE016760262674D4004D070D /* PBXContainerItemProxy */;
+			target = DEE433992627CB19001CF87B /* Orwell */;
+			targetProxy = DEE433BB2627CB19001CF87B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		DEE433A62627CB19001CF87B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE433A72627CB19001CF87B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		DE016766262674D4004D070D /* Debug */ = {
+		DEE433C12627CB19001CF87B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,7 +430,7 @@
 			};
 			name = Debug;
 		};
-		DE016767262674D4004D070D /* Release */ = {
+		DEE433C22627CB19001CF87B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -461,12 +484,12 @@
 			};
 			name = Release;
 		};
-		DE016769262674D4004D070D /* Debug */ = {
+		DEE433C42627CB19001CF87B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Orwell/Resources/Orwell.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Orwell/Orwell.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Orwell/Preview Content\"";
@@ -478,19 +501,19 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarlosHenriqueMartins.Orwell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		DE01676A262674D4004D070D /* Release */ = {
+		DEE433C52627CB19001CF87B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Orwell/Resources/Orwell.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Orwell/Orwell.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Orwell/Preview Content\"";
@@ -502,14 +525,14 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarlosHenriqueMartins.Orwell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		DE01676C262674D4004D070D /* Debug */ = {
+		DEE433C72627CB19001CF87B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -531,7 +554,7 @@
 			};
 			name = Debug;
 		};
-		DE01676D262674D4004D070D /* Release */ = {
+		DEE433C82627CB19001CF87B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -553,7 +576,7 @@
 			};
 			name = Release;
 		};
-		DE01676F262674D4004D070D /* Debug */ = {
+		DEE433CA2627CB19001CF87B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -573,7 +596,7 @@
 			};
 			name = Debug;
 		};
-		DE016770262674D4004D070D /* Release */ = {
+		DEE433CB2627CB19001CF87B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -596,43 +619,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE01673A262674D3004D070D /* Build configuration list for PBXProject "Orwell" */ = {
+		DEE433952627CB19001CF87B /* Build configuration list for PBXProject "Orwell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE016766262674D4004D070D /* Debug */,
-				DE016767262674D4004D070D /* Release */,
+				DEE433C12627CB19001CF87B /* Debug */,
+				DEE433C22627CB19001CF87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE016768262674D4004D070D /* Build configuration list for PBXNativeTarget "Orwell" */ = {
+		DEE433C32627CB19001CF87B /* Build configuration list for PBXNativeTarget "Orwell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE016769262674D4004D070D /* Debug */,
-				DE01676A262674D4004D070D /* Release */,
+				DEE433C42627CB19001CF87B /* Debug */,
+				DEE433C52627CB19001CF87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE01676B262674D4004D070D /* Build configuration list for PBXNativeTarget "OrwellTests" */ = {
+		DEE433C62627CB19001CF87B /* Build configuration list for PBXNativeTarget "OrwellTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE01676C262674D4004D070D /* Debug */,
-				DE01676D262674D4004D070D /* Release */,
+				DEE433C72627CB19001CF87B /* Debug */,
+				DEE433C82627CB19001CF87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE01676E262674D4004D070D /* Build configuration list for PBXNativeTarget "OrwellUITests" */ = {
+		DEE433C92627CB19001CF87B /* Build configuration list for PBXNativeTarget "OrwellUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE01676F262674D4004D070D /* Debug */,
-				DE016770262674D4004D070D /* Release */,
+				DEE433CA2627CB19001CF87B /* Debug */,
+				DEE433CB2627CB19001CF87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DE016737262674D3004D070D /* Project object */;
+	rootObject = DEE433922627CB19001CF87B /* Project object */;
 }
