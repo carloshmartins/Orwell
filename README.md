@@ -1,6 +1,6 @@
 # Orwell
 <p align="center">
-    <img src="Orwell.png" width="700" alt="Orwell" />
+    <img src="Orwell-Logo.png" width="700" alt="Orwell" />
 </p>
 
 <p align="center">
