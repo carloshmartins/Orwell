@@ -78,9 +78,13 @@ class ContentViewModel: ObservableObject {
     }
 
     func startSessionForDevice(_ device: AVCaptureDevice) {
+        // Find the default audio device.
+        guard let audioDevice = AVCaptureDevice.default(for: .audio) else { return }
         do {
-            let input = try AVCaptureDeviceInput(device: device)
-            addInput(input)
+            let audioInput = try AVCaptureDeviceInput(device: audioDevice)
+            let webcamInput = try AVCaptureDeviceInput(device: device)
+            addInput(webcamInput)
+            addInput(audioInput)
             startSession()
         }
         catch {
@@ -89,7 +93,7 @@ class ContentViewModel: ObservableObject {
     }
 
     func addInput(_ input: AVCaptureInput) {
-        guard captureSession.canAddInput(input) == true else {
+        guard captureSession.canAddInput(input) else {
             return
         }
         captureSession.addInput(input)

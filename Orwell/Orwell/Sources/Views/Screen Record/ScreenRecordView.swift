@@ -1,8 +1,8 @@
 //
-//  PlayerView.swift
+//  ScreenRecordView.swift
 //  Orwell
 //
-//  Created by carlos.henrique.martrins on 14/04/21.
+//  Created by carlos.henrique.martrins on 15/04/21.
 //
 
 import SwiftUI
@@ -10,15 +10,15 @@ import AppKit
 import AVFoundation
 import Combine
 
-class PlayerView: NSView {
+class ScreenRecordView: NSView {
     
     private weak var settings: UserSettings?
-    private var previewLayer: AVCaptureVideoPreviewLayer?
+    private var screenRecordLayer: AVCaptureVideoPreviewLayer?
     private lazy var cancellables = Set<AnyCancellable>()
 
     init(captureSession: AVCaptureSession, settings: UserSettings? = nil) {
         self.settings = settings
-        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        screenRecordLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         super.init(frame: .zero)
 
         setupLayer()
@@ -26,17 +26,17 @@ class PlayerView: NSView {
 
     func setupLayer() {
 
-        previewLayer?.frame = self.frame
-        previewLayer?.contentsGravity = .resizeAspectFill
-        previewLayer?.videoGravity = .resizeAspectFill
-        previewLayer?.connection?.automaticallyAdjustsVideoMirroring = false
+        screenRecordLayer?.frame = self.frame
+        screenRecordLayer?.contentsGravity = .resizeAspectFill
+        screenRecordLayer?.videoGravity = .resizeAspectFill
+        screenRecordLayer?.connection?.automaticallyAdjustsVideoMirroring = false
         
-        layer = previewLayer
+        layer = screenRecordLayer
         
         settings?.$isMirroring
             .subscribe(on: RunLoop.main)
             .sink { [weak self] isMirroring in
-                self?.previewLayer?.connection?.isVideoMirrored = isMirroring
+                self?.screenRecordLayer?.connection?.isVideoMirrored = isMirroring
             }
             .store(in: &cancellables)
     }

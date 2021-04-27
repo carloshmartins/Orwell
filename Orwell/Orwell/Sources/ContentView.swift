@@ -14,10 +14,11 @@ struct ContentView: View {
 
     init() {
         viewModel.checkAuthorization()
+        print("How this")
     }
 
     var body: some View {
-        PlayerContainerView(captureSession: viewModel.captureSession, settings: settings)
+        WebcamContainerView(captureSession: viewModel.captureSession, settings: settings)
                 .clipShape(shape)
     }
     

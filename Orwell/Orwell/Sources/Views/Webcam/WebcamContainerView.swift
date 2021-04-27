@@ -10,8 +10,8 @@ import AppKit
 import AVFoundation
 import Combine
 
-final class PlayerContainerView: NSViewRepresentable {
-    typealias NSViewType = PlayerView
+final class WebcamContainerView: NSViewRepresentable {
+    typealias NSViewType = CameraView
 
     let settings: UserSettings
     let captureSession: AVCaptureSession
@@ -21,9 +21,9 @@ final class PlayerContainerView: NSViewRepresentable {
         self.settings = settings
     }
 
-    func makeNSView(context: Context) -> PlayerView {
-        return PlayerView(captureSession: captureSession, settings: settings)
+    func makeNSView(context: Context) -> CameraView {
+        return CameraView(captureSession: captureSession, settings: settings)
     }
 
-    func updateNSView(_ nsView: PlayerView, context: Context) { }
+    func updateNSView(_ nsView: CameraView, context: Context) { }
 }

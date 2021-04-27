@@ -14,10 +14,11 @@
 		DEE433A82627CB19001CF87B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE433A62627CB19001CF87B /* Main.storyboard */; };
 		DEE433B42627CB19001CF87B /* OrwellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433B32627CB19001CF87B /* OrwellTests.swift */; };
 		DEE433BF2627CB19001CF87B /* OrwellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433BE2627CB19001CF87B /* OrwellUITests.swift */; };
-		DEE433DA2627CB9F001CF87B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433D92627CB9F001CF87B /* PlayerView.swift */; };
-		DEE433DF2627CBD3001CF87B /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433DE2627CBD3001CF87B /* PlayerContainerView.swift */; };
+		DEE433DA2627CB9F001CF87B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433D92627CB9F001CF87B /* CameraView.swift */; };
+		DEE433DF2627CBD3001CF87B /* WebcamContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433DE2627CBD3001CF87B /* WebcamContainerView.swift */; };
 		DEE433E42627CBF5001CF87B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433E32627CBF5001CF87B /* ContentViewModel.swift */; };
 		DEE433EA2627CCE6001CF87B /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433E92627CCE6001CF87B /* UserSettings.swift */; };
+		DEE433F62628589E001CF87B /* ScreenRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE433F52628589E001CF87B /* ScreenRecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +53,11 @@
 		DEE433BA2627CB19001CF87B /* OrwellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrwellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE433BE2627CB19001CF87B /* OrwellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrwellUITests.swift; sourceTree = "<group>"; };
 		DEE433C02627CB19001CF87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEE433D92627CB9F001CF87B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		DEE433DE2627CBD3001CF87B /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
+		DEE433D92627CB9F001CF87B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		DEE433DE2627CBD3001CF87B /* WebcamContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebcamContainerView.swift; sourceTree = "<group>"; };
 		DEE433E32627CBF5001CF87B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		DEE433E92627CCE6001CF87B /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		DEE433F52628589E001CF87B /* ScreenRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +167,8 @@
 		DEE433D72627CB81001CF87B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DEE433D92627CB9F001CF87B /* PlayerView.swift */,
-				DEE433DE2627CBD3001CF87B /* PlayerContainerView.swift */,
-				DEE433E32627CBF5001CF87B /* ContentViewModel.swift */,
+				DEE433FE26285B79001CF87B /* Screen Record */,
+				DEE433FA26285B66001CF87B /* Webcam */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +176,7 @@
 		DEE433D82627CB87001CF87B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DEE433E32627CBF5001CF87B /* ContentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,6 +187,23 @@
 				DEE433E92627CCE6001CF87B /* UserSettings.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		DEE433FA26285B66001CF87B /* Webcam */ = {
+			isa = PBXGroup;
+			children = (
+				DEE433D92627CB9F001CF87B /* CameraView.swift */,
+				DEE433DE2627CBD3001CF87B /* WebcamContainerView.swift */,
+			);
+			path = Webcam;
+			sourceTree = "<group>";
+		};
+		DEE433FE26285B79001CF87B /* Screen Record */ = {
+			isa = PBXGroup;
+			children = (
+				DEE433F52628589E001CF87B /* ScreenRecordView.swift */,
+			);
+			path = "Screen Record";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,11 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE433DA2627CB9F001CF87B /* PlayerView.swift in Sources */,
+				DEE433DA2627CB9F001CF87B /* CameraView.swift in Sources */,
 				DEE433EA2627CCE6001CF87B /* UserSettings.swift in Sources */,
+				DEE433F62628589E001CF87B /* ScreenRecordView.swift in Sources */,
 				DEE433A02627CB19001CF87B /* ContentView.swift in Sources */,
 				DEE4339E2627CB19001CF87B /* AppDelegate.swift in Sources */,
-				DEE433DF2627CBD3001CF87B /* PlayerContainerView.swift in Sources */,
+				DEE433DF2627CBD3001CF87B /* WebcamContainerView.swift in Sources */,
 				DEE433E42627CBF5001CF87B /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
