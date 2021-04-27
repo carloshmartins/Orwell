@@ -15,20 +15,7 @@ Welcome to **Orwell**, a MacOS app for Streaming and recording. A Quicktime repl
 
 ## Roadmap
 
-*Not only does the above call render our website’s HTML, it also generates an RSS feed, a site map, and more.*
-
-Above we’re using Orwell’s built-in Foundation theme, which is a very basic theme mostly provided as a starting point, and as an example of how Orwell themes may be built. We can of course at any time replace that theme with our own, custom one, which can include any sort of HTML and resources that we’d like.
-
-By default, Orwell will generate a website’s content based on Markdown files placed within that project’s `Content` folder, but any number of content items and custom pages can also be added programmatically.
-
-**Orwell supports three types of content:**
-
-
-*Above we’re constructing a completely custom Orwelling pipeline by calling the `Orwell(using:)` API.*
-
-To learn more about Orwell’s built-in Orwelling steps, [check out this file](https://github.com/JohnSundell/Orwell/blob/master/Sources/Orwell/API/OrwellingStep.swift).
-
-## Building an HTML theme
+Still writing...
 
 ## System requirements
 
@@ -36,7 +23,7 @@ To be able to successfully use Orwell, you need a MacOS.
 
 ## Installation
 
-Still been developing
+Still writing...
 
 ## Design and goals
 
