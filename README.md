@@ -1,7 +1,4 @@
 # Orwell
-<p align="center">
-    <img src="Orwell-Logo.png" width="700" alt="Orwell" />
-</p>
 
 <p align="center">
      <img src="https://img.shields.io/badge/platforms-mac-brightgreen.svg?style=flat" alt="Mac" />
