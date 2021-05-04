@@ -55,6 +55,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func makeMenu() -> NSMenu {
+        //To Do
         var menu = NSMenu()
         
         return menu

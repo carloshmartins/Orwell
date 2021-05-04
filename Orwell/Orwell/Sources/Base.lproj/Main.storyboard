@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="8ts-I6-w2E">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -102,7 +103,105 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="-125"/>
+            <point key="canvasLocation" x="321" y="-302"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="rYj-6P-2mM">
+            <objects>
+                <windowController id="8ts-I6-w2E" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ZcX-9L-FOb">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <view key="contentView" id="Gt8-vF-hbY">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="8ts-I6-w2E" id="fvI-Ny-4Cq"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="SFc-1T-hxQ" kind="relationship" relationship="window.shadowedContentViewController" id="nZg-Vy-MQa"/>
+                    </connections>
+                </windowController>
+                <customObject id="d5f-Rm-TfO" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="62"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wi2-7Q-Gxa">
+            <objects>
+                <viewController id="SFc-1T-hxQ" customClass="ViewController" customModule="ReplayKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5RR-70-wyL">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="288"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e3j-5k-WoU">
+                                <rect key="frame" x="176" y="13" width="129" height="32"/>
+                                <buttonCell key="cell" type="push" title="Start Recording" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rza-ec-PQc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="recordButtonTapped:" target="SFc-1T-hxQ" id="7Kf-QD-wsk"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-GJ-NO4">
+                                <rect key="frame" x="18" y="66" width="73" height="18"/>
+                                <buttonCell key="cell" type="check" title="Camera" bezelStyle="regularSquare" imagePosition="left" inset="2" id="PGe-Kd-iAY">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" target="SFc-1T-hxQ" id="wmh-ZN-bxa"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jxg-k2-Ih3">
+                                <rect key="frame" x="187" y="66" width="98" height="18"/>
+                                <buttonCell key="cell" type="check" title="Microphone" bezelStyle="regularSquare" imagePosition="left" inset="2" id="9dE-ks-FZv">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="microphoneButtonTapped:" target="SFc-1T-hxQ" id="9tH-gX-Nr9"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fqy-mI-Jjj">
+                                <rect key="frame" x="173" y="158" width="135" height="56"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Orwell" id="USv-3m-Caj">
+                                    <font key="font" metaFont="system" size="48"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fqy-mI-Jjj" secondAttribute="trailing" constant="174" id="4WX-oN-pcG"/>
+                            <constraint firstItem="Fqy-mI-Jjj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5RR-70-wyL" secondAttribute="leading" symbolic="YES" id="6Yj-CH-d7Y"/>
+                            <constraint firstItem="Fqy-mI-Jjj" firstAttribute="top" secondItem="5RR-70-wyL" secondAttribute="top" constant="74" id="Ah1-L4-6F1"/>
+                            <constraint firstItem="jxg-k2-Ih3" firstAttribute="top" secondItem="Fqy-mI-Jjj" secondAttribute="bottom" constant="75" id="C0M-kf-TH5"/>
+                            <constraint firstItem="e3j-5k-WoU" firstAttribute="top" secondItem="jxg-k2-Ih3" secondAttribute="bottom" constant="27" id="De8-hT-MVZ"/>
+                            <constraint firstAttribute="bottom" secondItem="e3j-5k-WoU" secondAttribute="bottom" constant="20" symbolic="YES" id="GFa-fk-Ir4"/>
+                            <constraint firstItem="jxg-k2-Ih3" firstAttribute="baseline" secondItem="hNZ-GJ-NO4" secondAttribute="baseline" id="I1O-bm-cHM"/>
+                            <constraint firstItem="hNZ-GJ-NO4" firstAttribute="leading" secondItem="5RR-70-wyL" secondAttribute="leading" constant="20" id="Vmt-eL-TJ4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jxg-k2-Ih3" secondAttribute="trailing" constant="20" symbolic="YES" id="YSw-fH-tzN"/>
+                            <constraint firstItem="e3j-5k-WoU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5RR-70-wyL" secondAttribute="leading" constant="20" symbolic="YES" id="a5E-CH-9Pn"/>
+                            <constraint firstAttribute="trailing" secondItem="e3j-5k-WoU" secondAttribute="trailing" constant="182" id="llr-V9-SQr"/>
+                            <constraint firstItem="jxg-k2-Ih3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hNZ-GJ-NO4" secondAttribute="trailing" constant="8" symbolic="YES" id="x5e-bG-wie"/>
+                            <constraint firstItem="jxg-k2-Ih3" firstAttribute="leading" secondItem="5RR-70-wyL" secondAttribute="leading" constant="189" id="yiG-Z7-Nhk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraCheckBox" destination="hNZ-GJ-NO4" id="4q5-Kj-vF9"/>
+                        <outlet property="microphoneCheckBox" destination="jxg-k2-Ih3" id="AsP-BL-0Oh"/>
+                        <outlet property="recordButton" destination="e3j-5k-WoU" id="ArA-JT-Xjm"/>
+                    </connections>
+                </viewController>
+                <customObject id="WUw-8M-aNE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="503"/>
         </scene>
     </scenes>
 </document>
