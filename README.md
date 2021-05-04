@@ -8,7 +8,11 @@ Welcome to **Orwell**, a MacOS app for Streaming and recording. A Quicktime repl
 
 ## Roadmap
 
-Still writing...
+- [x] Create Webcam Layout for Webcam Recorder
+- [ ] Create ToolBar Menu
+- [ ] Create Sizable Option for Webcam Recorder
+- [ ] Create Window for Screen Recorder
+
 
 ## System requirements
 
@@ -16,7 +20,9 @@ To be able to successfully use Orwell, you need a MacOS.
 
 ## Installation
 
-Still writing...
+1) Clone the Project
+
+2) Run on Mac Target
 
 ## Design and goals
 
